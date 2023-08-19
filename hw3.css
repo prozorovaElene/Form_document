@@ -1,0 +1,89 @@
+.center{
+    text-align: center;
+}
+
+body{
+    line-height: 1.5;
+    padding: 1rem;
+}
+
+label{
+    display: block;
+    padding-top: 0.7em;
+}
+
+.mybox{
+    background-image: url("https://cdn.wallpapersafari.com/16/64/EQoGv8.jpg");
+}
+
+.form-group{
+    padding-left: 2rem;
+}
+
+.radios{
+    display: flex;
+    flex-direction: row;
+}
+
+input[type="text"],
+input[type = "email"],
+input[type = "password"] {
+    width: 90%;
+    height: 25px;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+}
+
+.radio1{
+    margin-left: 8%;
+    margin-right: 8%;
+}
+.radio2{
+    margin-right: 8%;
+}
+
+.checkboxes{
+    display: flex;
+    flex-direction: row;
+}
+
+.checkbox1{
+    margin-left: 8%;
+    margin-right: 8%;
+}
+.checkbox2{
+    margin-right: 8%;
+}
+
+select{
+    width: 90%;
+    height: 40px;
+    border: 3px solid lightgray;
+    border-radius: 5px;
+}
+
+.submitBox{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+button {
+    margin-bottom: 5%;
+    height: 45px;
+    background-color: lightblue;
+    border-radius: 5px;
+    border: 0;
+    margin-top: 2%;
+}
+
+button:hover{
+    background-color: lightcoral;
+}
+
+
+
+
+
+
+

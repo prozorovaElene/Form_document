@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="hw3.css">
+    
+
+</head>
+<body background="https://abhayavajranewman.files.wordpress.com/2015/08/blank-front-page-slider-background-grey-new.jpg">
+    <div class="mybox">
+    <form >
+        <div class="center">
+            <h1 style="margin-bottom: 0;">Form</h1>
+        </div>
+
+        <div class="form-group">
+           <label for="name">Name:</label>
+           <input type="text" id="name" minlength = "3" required/>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required/>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" required/>
+        </div>
+
+        <div class="form-group">
+            <label for="confPassword">Confirm Password:</label>
+            <input type="password" id="confPassword" />
+        </div>
+
+        <div class="form-group">
+            <p style="margin-bottom: 0;">Gender:</p>
+
+            <div class="radios">
+        <div class="radio1">
+            <input type="radio" name="gender" id="male"> 
+            <label for="male" style="padding-top: 0;">Male</label>
+        </div>
+        <div class="radio2">
+            <input type="radio" name="gender" id="female"> 
+            <label for="female" style="padding-top: 0;">Female</label>
+        </div>
+        <div class="radio3">
+            <input type="radio" name="gender" id="other"> 
+            <label for="other" style="padding-top: 0;">Other</label>
+        </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+            <p style="margin-bottom: 0;">Interests:</p>
+        <div class="checkboxes">
+            <div class="checkbox1">
+                <input type="checkbox" name="interests" id="sports"> 
+                <label for="sports" style="padding-top: 0;">Sports</label>
+            </div>
+            <div class="checkbox2">
+                <input type="checkbox" name="interests" id="music"> 
+                <label for="music" style="padding-top: 0;">Music</label>
+            </div>
+            <div class="checkbox3">
+                <input type="checkbox" name="interests" id="travel"> 
+                <label for="travel" style="padding-top: 0;">Travel</label>
+            </div>
+                </div>
+        <div class="form-group" style="padding-left: 0;">
+            <p style="margin-bottom: 0;">Country:</p>
+            <select>               
+                <option>USA</option>
+                <option>Germany</option>
+                <option>Georgia</option>
+            </select> 
+        </div>
+        <div class="form-group" style="padding-left: 0;">
+            <p style="margin-bottom: 0;">Choose a value:</p>
+        <div class="submitBox">
+            <input type="range" value="50" id = "val" min="0" max="100" oninput="this.nextElementSibling.value = this.value">
+            <output>50</output>
+            <button type="submit" value="Submit" onclick="return Validate()" >Submit</button>
+        </div>
+    </form>
+    </div>
+<script type="text/javascript">
+  function Validate() { 
+      var pw1 = document.getElementById("password").value;  
+      var pw2 = document.getElementById("confPassword").value;  
+  if(pw1 != pw2) {   
+      alert("Passwords did not match");
+      return false; }
+  return true;}
+</script>
+    
+</body>
+</html>
+
